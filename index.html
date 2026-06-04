@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Son-shine · Celebrate Our New Baby Boy</title>
+<meta name="description" content="Join us to celebrate Britney Marie's little Son-shine! Two showers, two cities — St. Louis & Houston. RSVP now!">
+<meta property="og:title" content="Summer Son-shine · Celebrate Our New Baby Boy" />
+<meta property="og:description" content="Join us to celebrate Britney Marie's little Son-shine! Two showers, two cities — St. Louis on July 4th & Houston on August 1st. RSVP now!" />
+<meta property="og:image" content="https://britneymariejackson.github.io/SummerSonShine2026/IMG_4901.jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://britneymariejackson.github.io/SummerSonShine2026" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Summer Son-shine · Celebrate Our New Baby Boy" />
+<meta name="twitter:description" content="Join us to celebrate Britney Marie's little Son-shine! Two showers, two cities — St. Louis & Houston. RSVP now!" />
+<meta name="twitter:image" content="https://britneymariejackson.github.io/SummerSonShine2026/IMG_4901.jpeg" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ocean: #006994;
+    --gold: #ffd166;
+    --coral: #e07a5f;
+    --cream: #fdf8f0;
+    --white: #ffffff;
+    --dark: #1c1c1c;
+    --accent-gold: #c9a96e;
+    --text: #1a1a1a;
+    --muted: #888888;
+    --border: #e0d8cc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    background: rgba(253,248,240,0.96);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e8e0d0;
+    padding: 0 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    height: 60px;
+    transition: box-shadow 0.3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.06); }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 24px; font-weight: 300;
+    color: var(--text); text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 36px; }
+  .nav-links a {
+    font-size: 9px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--muted); text-decoration: none; font-weight: 400;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ocean); }
+  .nav-hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+  .nav-hamburger span { width: 22px; height: 1px; background: var(--text); display: block; transition: all 0.3s; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--ocean);
+    padding: 140px 48px 120px;
+    position: relative; overflow: hidden;
+    text-align: center;
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+  }
+  .hero-bubble {
+    position: absolute; border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    animation: floatup linear infinite;
+    pointer-events: none;
+  }
+  @keyframes floatup {
+    from { transform: translateY(0) scale(1); opacity: 0.7; }
+    to { transform: translateY(-100vh) scale(1.1); opacity: 0; }
+  }
+  .hero-eyebrow {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
+    color: rgba(255,255,255,0.8); padding: 8px 20px; margin-bottom: 32px;
+    font-weight: 300; animation: fadeup 1s 0.2s both;
+  }
+  .hero-script {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-weight: 300;
+    font-size: clamp(72px, 12vw, 110px);
+    line-height: 0.85; color: var(--white);
+    animation: fadeup 1s 0.4s both;
+  }
+  .hero-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 5vw, 46px); font-weight: 600;
+    color: var(--gold); letter-spacing: 10px; text-transform: uppercase;
+    margin-top: 10px; animation: fadeup 1s 0.6s both;
+  }
+  .hero-rule {
+    width: 50px; height: 1px;
+    background: rgba(255,255,255,0.3);
+    margin: 32px auto; animation: fadeup 1s 0.8s both;
+  }
+  .hero-sub {
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: rgba(255,255,255,0.5); font-weight: 300;
+    animation: fadeup 1s 1s both;
+  }
+  .hero-scroll {
+    position: absolute; bottom: 80px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    animation: fadeup 1s 1.4s both;
+  }
+  .hero-scroll span {
+    font-size: 8px; letter-spacing: 4px; text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+  .hero-scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+    animation: scrollpulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollpulse { 0%,100% { opacity:0.3; } 50% { opacity:1; } }
+  .hero-wave {
+    position: absolute; bottom: -2px; left: -10px; right: -10px; pointer-events: none;
+  }
+  @keyframes fadeup {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 80px 48px; }
+  .section-label {
+    font-size: 9px; letter-spacing: 6px; text-transform: uppercase;
+    color: var(--ocean); font-weight: 400; margin-bottom: 12px; text-align: center;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: clamp(36px, 5vw, 52px); font-weight: 300;
+    color: var(--text); text-align: center; margin-bottom: 12px;
+  }
+  .section-sub {
+    font-size: 13px; font-weight: 300; color: var(--muted);
+    text-align: center; line-height: 1.9; margin-bottom: 52px;
+    max-width: 620px; margin-left: auto; margin-right: auto;
+  }
+
+  /* ── COUNTDOWN ── */
+  .countdown-section {
+    background: var(--dark);
+    padding: 56px 48px;
+    text-align: center;
+  }
+  .countdown-label {
+    font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
+    color: var(--accent-gold); margin-bottom: 32px;
+  }
+  .countdown-grid {
+    display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
+  }
+  .countdown-item { text-align: center; }
+  .countdown-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px; font-weight: 300; color: var(--white);
+    line-height: 1; display: block;
+  }
+  .countdown-unit {
+    font-size: 8px; letter-spacing: 4px; text-transform: uppercase;
+    color: rgba(255,255,255,0.3); margin-top: 6px; display: block;
+  }
+  .countdown-sep {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px; color: var(--accent-gold);
+    align-self: flex-start; margin-top: 8px; opacity: 0.4;
+  }
+
+  /* ── PARTIES ── */
+  .parties-section { background: var(--white); }
+  .parties-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    max-width: 780px; margin: 0 auto;
+  }
+  .party-card {
+    border: 1px solid var(--border);
+    padding: 36px 28px 32px;
+    position: relative; background: var(--cream);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .party-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+  .party-badge {
+    position: absolute; top: -1px; left: 24px;
+    font-size: 7px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--white); padding: 5px 14px; font-weight: 400;
+  }
+  .party-card:first-child .party-badge { background: var(--ocean); }
+  .party-card:last-child .party-badge { background: var(--coral); }
+  .party-emoji { font-size: 32px; margin: 18px 0 14px; display: block; }
+  .party-city {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; font-weight: 300; color: var(--text); margin-bottom: 4px;
+  }
+  .party-vibe {
+    font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 400; margin-bottom: 20px;
+  }
+  .party-card:first-child .party-vibe { color: var(--ocean); }
+  .party-card:last-child .party-vibe { color: var(--coral); }
+  .party-divider { width: 32px; height: 1px; background: var(--border); margin-bottom: 20px; }
+  .party-detail { font-size: 13px; font-weight: 300; color: #555; line-height: 2.3; }
+  .party-detail strong { font-weight: 500; color: var(--text); }
+  .party-map-link {
+    display: inline-block; margin-top: 18px;
+    font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--ocean); text-decoration: none; border-bottom: 1px solid var(--ocean);
+    padding-bottom: 2px; transition: opacity 0.2s;
+  }
+  .party-map-link:hover { opacity: 0.6; }
+
+  /* ── RSVP ── */
+  .rsvp-section {
+    background: var(--gold);
+    text-align: center; padding: 80px 48px;
+  }
+  .rsvp-section .section-label { color: rgba(0,0,0,0.4); }
+  .rsvp-section .section-title { color: var(--text); }
+  .rsvp-section .section-sub { color: rgba(0,0,0,0.5); }
+  .rsvp-form {
+    max-width: 460px; margin: 0 auto;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .rsvp-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .rsvp-input, .rsvp-select {
+    width: 100%; padding: 15px 18px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px; font-weight: 300;
+    color: var(--text); outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+  .rsvp-input:focus, .rsvp-select:focus { border-color: var(--ocean); }
+  .rsvp-input::placeholder { color: #aaa; }
+  .rsvp-select { color: #888; cursor: pointer; }
+  .rsvp-select option { color: var(--text); }
+  .rsvp-btn {
+    background: var(--ocean); color: var(--white);
+    border: none; padding: 16px 32px;
+    font-family: 'Jost', sans-serif;
+    font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
+    font-weight: 400; cursor: pointer; margin-top: 6px;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .rsvp-btn:hover { background: #005578; transform: translateY(-1px); }
+  .rsvp-note {
+    font-size: 10px; color: rgba(0,0,0,0.35);
+    margin-top: 8px; font-weight: 300;
+  }
+  .rsvp-success {
+    display: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 24px;
+    color: var(--text); margin-top: 20px;
+  }
+
+  /* ── GIFTS ── */
+  .gifts-section { background: var(--cream); }
+  .gifts-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+    max-width: 680px; margin: 0 auto;
+  }
+  .gifts-category { max-width: 780px; margin: 0 auto 0; }
+  .gifts-category-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px; font-weight: 300; color: var(--text);
+    text-align: center; margin-bottom: 8px;
+  }
+  .gifts-category-sub {
+    font-size: 13px; font-weight: 300; color: var(--muted);
+    text-align: center; line-height: 1.8; margin-bottom: 28px;
+    max-width: 480px; margin-left: auto; margin-right: auto;
+  }
+  .gifts-registry-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;
+  }
+  .gift-card-529 {
+    max-width: 360px; margin: 0 auto;
+  }
+  .gifts-or {
+    display: flex; align-items: center; gap: 20px;
+    max-width: 480px; margin: 40px auto;
+  }
+  .gifts-or-line { flex: 1; height: 1px; background: var(--border); }
+  .gifts-or-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 22px; color: var(--muted); font-weight: 300;
+  }
+  .gift-card {
+    background: var(--white); border: 1px solid var(--border);
+    padding: 40px 28px; text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .gift-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.07);
+  }
+  .gift-icon { font-size: 40px; margin-bottom: 18px; display: block; }
+  .gift-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px; font-weight: 300; color: var(--text); margin-bottom: 10px;
+  }
+  .gift-desc {
+    font-size: 12px; font-weight: 300; color: var(--muted);
+    line-height: 1.9; margin-bottom: 28px;
+  }
+  .gift-btn {
+    display: inline-block; padding: 12px 28px;
+    font-size: 8px; letter-spacing: 4px; text-transform: uppercase;
+    text-decoration: none; font-weight: 400; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .gift-btn-blue { background: var(--ocean); color: var(--white); }
+  .gift-btn-blue:hover { background: #005578; }
+  .gift-btn-outline { border: 1px solid var(--text); color: var(--text); }
+  .gift-btn-outline:hover { background: var(--text); color: var(--white); }
+
+  /* ── ABOUT ── */
+  .about-section {
+    background: var(--dark);
+    text-align: center; padding: 80px 48px;
+  }
+  .about-section .section-label { color: var(--accent-gold); }
+  .about-section .section-title { color: var(--white); margin-bottom: 32px; }
+  .about-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: clamp(18px, 2.5vw, 24px); font-weight: 300;
+    color: rgba(255,255,255,0.65); line-height: 1.9;
+    max-width: 560px; margin: 0 auto 36px;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 28px; text-align: left;
+  }
+  .about-detail {
+    font-size: 9px; letter-spacing: 4px; text-transform: uppercase;
+    color: rgba(255,255,255,0.25);
+  }
+  .about-dots { display: flex; justify-content: center; gap: 6px; margin-bottom: 20px; }
+  .about-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent-gold); opacity: 0.4; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ocean);
+    padding: 32px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 22px; color: var(--white); font-weight: 300;
+  }
+  .footer-center {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 16px; color: var(--gold);
+  }
+  .footer-right {
+    font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* ── GUESTBOOK ── */
+  .guestbook-section { background: var(--white); }
+  .guestbook-wrap { max-width: 600px; margin: 0 auto; }
+  .gb-textarea {
+    width: 100%; padding: 15px 18px;
+    border: 1px solid rgba(0,0,0,0.12);
+    background: var(--cream);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px; font-weight: 300;
+    color: var(--text); outline: none;
+    resize: vertical; min-height: 100px;
+    transition: border-color 0.2s;
+  }
+  .gb-textarea:focus { border-color: var(--ocean); }
+  .gb-textarea::placeholder { color: #aaa; }
+  .guestbook-form { display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; }
+  .gb-btn { align-self: flex-start; }
+  .guestbook-messages { display: flex; flex-direction: column; gap: 20px; }
+  .gb-message-card {
+    background: var(--cream); border: 1px solid var(--border);
+    padding: 24px 24px 20px; position: relative;
+    animation: fadeup 0.5s ease forwards;
+  }
+  .gb-message-card::before {
+    content: '"'; font-family: 'Cormorant Garamond', serif;
+    font-size: 60px; color: var(--ocean); opacity: 0.15;
+    position: absolute; top: 8px; left: 16px; line-height: 1;
+  }
+  .gb-message-name {
+    font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--ocean); font-weight: 500; margin-bottom: 4px;
+  }
+  .gb-message-relation {
+    font-size: 10px; color: var(--muted); font-weight: 300; margin-bottom: 12px;
+  }
+  .gb-message-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 18px; color: var(--text);
+    line-height: 1.7; padding-left: 8px;
+  }
+  .gb-message-time {
+    font-size: 9px; color: var(--muted); font-weight: 300;
+    margin-top: 12px; text-align: right;
+  }
+  .gb-empty {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 18px; color: var(--muted);
+    text-align: center; padding: 32px 0;
+  }
+
+  /* ── MAMA SAYS ── */
+  .about-layout {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; max-width: 900px; margin: 0 auto;
+    align-items: center;
+  }
+  .about-photo-wrap { position: relative; margin-bottom: 20px; }
+  .about-photo {
+    width: 100%; aspect-ratio: 4/3;
+    object-fit: cover;
+    border: 3px solid var(--accent-gold);
+    display: block;
+  }
+  .about-photo-caption {
+    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--accent-gold);
+    font-size: 8px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--dark); padding: 6px 18px; white-space: nowrap; font-weight: 500;
+  }
+  .about-content { text-align: left; }
+  .about-content .section-label { text-align: left; }
+  .about-content .section-title { text-align: left; margin-bottom: 28px; }
+
+  /* ── GUESTBOOK ── */
+  @media (max-width: 700px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
+    .nav-links.open {
+      display: flex; flex-direction: column;
+      position: fixed; top: 60px; left: 0; right: 0;
+      background: var(--cream); padding: 24px;
+      border-bottom: 1px solid var(--border);
+      gap: 20px; z-index: 199;
+    }
+    section { padding: 56px 24px; }
+    .hero { padding: 80px 24px 220px; min-height: auto; }
+    .hero-eyebrow {
+      font-size: 8px; letter-spacing: 2px;
+      padding: 6px 12px; margin-bottom: 16px;
+      max-width: 280px; text-align: center;
+      white-space: normal; line-height: 1.6;
+    }
+    .hero-name { font-size: 28px; letter-spacing: 6px; }
+    .hero-script { font-size: 58px; }
+    .hero-rule { margin: 16px auto; }
+    .hero-sub { font-size: 8px; letter-spacing: 2px; }
+    .parties-grid { grid-template-columns: 1fr; }
+    .gifts-registry-grid { grid-template-columns: 1fr; }
+    .gift-card-529 { max-width: 100%; }
+    .gifts-or { max-width: 100%; }
+    .gifts-category-label { font-size: 20px; }
+    .section-title { font-size: 28px; }
+    .section-label { font-size: 8px; letter-spacing: 3px; }
+    .section-sub { font-size: 13px; line-height: 1.7; margin-bottom: 36px; max-width: 100%; padding: 0 8px; }
+    .party-detail { font-size: 12px; line-height: 2; }
+    .about-quote { font-size: 16px; }
+    .rsvp-note { font-size: 10px; line-height: 1.6; }
+    .footer-center { font-size: 13px; }
+    .footer-right { font-size: 7px; letter-spacing: 2px; }
+    .gift-title { font-size: 22px; }
+    .countdown-section { padding: 36px 12px; }
+    .hero-sub { font-size: 7px; letter-spacing: 2px; }
+    .gifts-category-label { font-size: 18px; }
+    .gifts-category-sub { font-size: 12px; max-width: 100%; padding: 0 8px; }
+    .rsvp-section .section-sub { font-size: 12px; padding: 0 8px; }
+    .about-section { padding: 56px 24px; }
+    .rsvp-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; padding: 32px 24px; }
+    .countdown-section { padding: 40px 16px; }
+    .countdown-grid { gap: 8px; flex-wrap: nowrap; justify-content: center; }
+    .countdown-num { font-size: 36px; }
+    .countdown-unit { font-size: 7px; letter-spacing: 2px; }
+    .countdown-sep { font-size: 24px; margin-top: 4px; }
+    .countdown-label { font-size: 8px; letter-spacing: 2px; margin-bottom: 20px; }
+    .about-layout { grid-template-columns: 1fr; gap: 48px; }
+    .about-content .section-label,
+    .about-content .section-title { text-align: center; }
+    .about-quote { padding-left: 16px; font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#">Summer Son-shine</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#parties">Our Showers</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#gifts">Registry & Gifts</a>
+    <a href="#guestbook">Guestbook</a>
+    <a href="#about">Mama Says</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <!-- Floating suns & fireworks -->
+
+  <!-- Sun 1 -->
+  <svg style="position:absolute;bottom:35%;left:6%;animation:floatup 4.5s 1s linear infinite;opacity:0.65;pointer-events:none;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="10" fill="#ffd166"/>
+    <line x1="18" y1="2" x2="18" y2="6" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="18" y1="30" x2="18" y2="34" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="2" y1="18" x2="6" y2="18" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="30" y1="18" x2="34" y2="18" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="6" y1="6" x2="9" y2="9" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="27" y1="27" x2="30" y2="30" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="30" y1="6" x2="27" y2="9" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+    <line x1="9" y1="27" x2="6" y2="30" stroke="#ffd166" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Firework 1 coral -->
+  <svg style="position:absolute;bottom:25%;left:20%;animation:floatup 5s 0.5s linear infinite;opacity:0.6;pointer-events:none;" width="30" height="30" viewBox="0 0 30 30">
+    <circle cx="15" cy="15" r="3" fill="#e07a5f"/>
+    <line x1="15" y1="2" x2="15" y2="7" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="15" y1="23" x2="15" y2="28" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="2" y1="15" x2="7" y2="15" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="23" y1="15" x2="28" y2="15" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="5" y1="5" x2="9" y2="9" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="21" y1="21" x2="25" y2="25" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="25" y1="5" x2="21" y2="9" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="9" y1="21" x2="5" y2="25" stroke="#e07a5f" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Sun 2 -->
+  <svg style="position:absolute;bottom:30%;right:8%;animation:floatup 3.5s 2s linear infinite;opacity:0.6;pointer-events:none;" width="28" height="28" viewBox="0 0 28 28">
+    <circle cx="14" cy="14" r="7" fill="#ffd166"/>
+    <line x1="14" y1="1" x2="14" y2="5" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="14" y1="23" x2="14" y2="27" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1" y1="14" x2="5" y2="14" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="23" y1="14" x2="27" y2="14" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="4" x2="7" y2="7" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="21" y1="21" x2="24" y2="24" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="24" y1="4" x2="21" y2="7" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="7" y1="21" x2="4" y2="24" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Firework 2 white -->
+  <svg style="position:absolute;bottom:15%;right:22%;animation:floatup 4s 1.5s linear infinite;opacity:0.55;pointer-events:none;" width="26" height="26" viewBox="0 0 26 26">
+    <circle cx="13" cy="13" r="2.5" fill="#fff"/>
+    <line x1="13" y1="1" x2="13" y2="6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="13" y1="20" x2="13" y2="25" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1" y1="13" x2="6" y2="13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="20" y1="13" x2="25" y2="13" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="4" x2="7" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="19" y1="19" x2="22" y2="22" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="22" y1="4" x2="19" y2="7" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="7" y1="19" x2="4" y2="22" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Sun 3 tiny -->
+  <svg style="position:absolute;bottom:50%;right:38%;animation:floatup 4s 2.5s linear infinite;opacity:0.5;pointer-events:none;" width="22" height="22" viewBox="0 0 22 22">
+    <circle cx="11" cy="11" r="5" fill="#ffd166"/>
+    <line x1="11" y1="1" x2="11" y2="4" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="11" y1="18" x2="11" y2="21" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1" y1="11" x2="4" y2="11" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="18" y1="11" x2="21" y2="11" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="3" y1="3" x2="5" y2="5" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="17" y1="17" x2="19" y2="19" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="19" y1="3" x2="17" y2="5" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="5" y1="17" x2="3" y2="19" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Firework 3 gold -->
+  <svg style="position:absolute;bottom:45%;left:38%;animation:floatup 6s 1s linear infinite;opacity:0.5;pointer-events:none;" width="24" height="24" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="2" fill="#ffd166"/>
+    <line x1="12" y1="1" x2="12" y2="5" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="12" y1="19" x2="12" y2="23" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1" y1="12" x2="5" y2="12" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="19" y1="12" x2="23" y2="12" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="3" y1="3" x2="6" y2="6" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="18" y1="18" x2="21" y2="21" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="21" y1="3" x2="18" y2="6" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="6" y1="18" x2="3" y2="21" stroke="#ffd166" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+
+  <div class="hero-eyebrow">Celebrating the arrival of Britney Marie's little Son-shine</div>
+  <div class="hero-name">Summer Showers</div>
+  <div class="hero-sub" style="color:rgba(255,255,255,0.5);margin:6px 0;font-size:10px;letter-spacing:4px;">for our</div>
+  <div class="hero-script">Baby Boy</div>
+  <div class="hero-rule"></div>
+
+
+
+  <!-- SCENE -->
+  <div style="width:100%;position:absolute;bottom:60px;left:0;right:0;height:200px;pointer-events:none;">
+
+    <!-- Divider -->
+
+    <!-- STL SVG -->
+    <svg style="position:absolute;bottom:0;left:0;width:50%;height:200px;" viewBox="0 0 340 200" preserveAspectRatio="xMidYMax meet">
+      <!-- Stars -->
+      <circle cx="60" cy="30" r="1.5" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="120" cy="20" r="1" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="200" cy="35" r="1.5" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="280" cy="15" r="1" fill="rgba(255,255,255,0.4)"/>
+      <circle cx="310" cy="40" r="1" fill="rgba(255,255,255,0.2)"/>
+      <!-- Gateway Arch -->
+      <path d="M120,195 Q120,20 170,5 Q220,20 220,195" fill="none" stroke="rgba(255,209,102,0.9)" stroke-width="7" stroke-linecap="round"/>
+      <rect x="116" y="182" width="10" height="18" rx="1" fill="rgba(255,209,102,0.9)"/>
+      <rect x="214" y="182" width="10" height="18" rx="1" fill="rgba(255,209,102,0.9)"/>
+      <!-- Mississippi River -->
+      <path d="M0,178 Q85,168 170,178 Q255,188 340,175 L340,200 L0,200 Z" fill="rgba(0,60,100,0.6)"/>
+      <!-- Skyline -->
+      <rect x="20" y="152" width="18" height="30" fill="rgba(0,50,80,0.5)" rx="1"/>
+      <rect x="42" y="142" width="14" height="40" fill="rgba(0,50,80,0.6)" rx="1"/>
+      <rect x="58" y="158" width="10" height="24" fill="rgba(0,50,80,0.4)" rx="1"/>
+      <rect x="262" y="150" width="14" height="32" fill="rgba(0,50,80,0.5)" rx="1"/>
+      <rect x="280" y="138" width="18" height="44" fill="rgba(0,50,80,0.6)" rx="1"/>
+      <rect x="302" y="155" width="12" height="27" fill="rgba(0,50,80,0.4)" rx="1"/>
+      <!-- Firework 1 - gold left -->
+      <g opacity="0.9">
+        <circle cx="55" cy="55" r="2.5" fill="#ffd166"/>
+        <line x1="55" y1="47" x2="55" y2="41" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="55" y1="63" x2="55" y2="69" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="47" y1="55" x2="41" y2="55" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="63" y1="55" x2="69" y2="55" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="49" y1="49" x2="44" y2="44" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="61" y1="61" x2="66" y2="66" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="61" y1="49" x2="66" y2="44" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="49" y1="61" x2="44" y2="66" stroke="#ffd166" stroke-width="1.5"/>
+      </g>
+      <!-- Firework 1 - gold left -->
+      <g opacity="0.9">
+        <circle cx="55" cy="55" r="2.5" fill="#ffd166"/>
+        <line x1="55" y1="47" x2="55" y2="41" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="55" y1="63" x2="55" y2="69" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="47" y1="55" x2="41" y2="55" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="63" y1="55" x2="69" y2="55" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="49" y1="49" x2="44" y2="44" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="61" y1="61" x2="66" y2="66" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="61" y1="49" x2="66" y2="44" stroke="#ffd166" stroke-width="1.5"/>
+        <line x1="49" y1="61" x2="44" y2="66" stroke="#ffd166" stroke-width="1.5"/>
+      </g>
+      <!-- Firework 2 - white upper right -->
+      <g opacity="0.75">
+        <circle cx="295" cy="38" r="2.5" fill="#fff"/>
+        <line x1="295" y1="30" x2="295" y2="25" stroke="#fff" stroke-width="1.5"/>
+        <line x1="295" y1="46" x2="295" y2="51" stroke="#fff" stroke-width="1.5"/>
+        <line x1="287" y1="38" x2="282" y2="38" stroke="#fff" stroke-width="1.5"/>
+        <line x1="303" y1="38" x2="308" y2="38" stroke="#fff" stroke-width="1.5"/>
+        <line x1="289" y1="32" x2="285" y2="28" stroke="#fff" stroke-width="1.5"/>
+        <line x1="301" y1="44" x2="305" y2="48" stroke="#fff" stroke-width="1.5"/>
+        <line x1="301" y1="32" x2="305" y2="28" stroke="#fff" stroke-width="1.5"/>
+        <line x1="289" y1="44" x2="285" y2="48" stroke="#fff" stroke-width="1.5"/>
+      </g>
+      <!-- Firework 3 - coral mid left -->
+      <g opacity="0.7">
+        <circle cx="88" cy="28" r="2" fill="#e07a5f"/>
+        <line x1="88" y1="21" x2="88" y2="17" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="88" y1="35" x2="88" y2="39" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="81" y1="28" x2="77" y2="28" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="95" y1="28" x2="99" y2="28" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="83" y1="23" x2="80" y2="20" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="93" y1="33" x2="96" y2="36" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="93" y1="23" x2="96" y2="20" stroke="#e07a5f" stroke-width="1.5"/>
+        <line x1="83" y1="33" x2="80" y2="36" stroke="#e07a5f" stroke-width="1.5"/>
+      </g>
+      <!-- Firework 4 - gold upper mid -->
+      <g opacity="0.65">
+        <circle cx="170" cy="22" r="2" fill="#ffd166"/>
+        <line x1="170" y1="15" x2="170" y2="11" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="170" y1="29" x2="170" y2="33" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="163" y1="22" x2="159" y2="22" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="177" y1="22" x2="181" y2="22" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="165" y1="17" x2="162" y2="14" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="175" y1="27" x2="178" y2="30" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="175" y1="17" x2="178" y2="14" stroke="#ffd166" stroke-width="1.2"/>
+        <line x1="165" y1="27" x2="162" y2="30" stroke="#ffd166" stroke-width="1.2"/>
+      </g>
+      <!-- Firework 5 - white lower left -->
+      <g opacity="0.6">
+        <circle cx="32" cy="80" r="1.8" fill="#fff"/>
+        <line x1="32" y1="74" x2="32" y2="70" stroke="#fff" stroke-width="1.2"/>
+        <line x1="32" y1="86" x2="32" y2="90" stroke="#fff" stroke-width="1.2"/>
+        <line x1="26" y1="80" x2="22" y2="80" stroke="#fff" stroke-width="1.2"/>
+        <line x1="38" y1="80" x2="42" y2="80" stroke="#fff" stroke-width="1.2"/>
+        <line x1="28" y1="76" x2="25" y2="73" stroke="#fff" stroke-width="1.2"/>
+        <line x1="36" y1="84" x2="39" y2="87" stroke="#fff" stroke-width="1.2"/>
+      </g>
+      <!-- Firework 6 - coral far right -->
+      <g opacity="0.6">
+        <circle cx="320" cy="70" r="1.8" fill="#e07a5f"/>
+        <line x1="320" y1="63" x2="320" y2="59" stroke="#e07a5f" stroke-width="1.2"/>
+        <line x1="320" y1="77" x2="320" y2="81" stroke="#e07a5f" stroke-width="1.2"/>
+        <line x1="313" y1="70" x2="309" y2="70" stroke="#e07a5f" stroke-width="1.2"/>
+        <line x1="327" y1="70" x2="331" y2="70" stroke="#e07a5f" stroke-width="1.2"/>
+        <line x1="315" y1="65" x2="312" y2="62" stroke="#e07a5f" stroke-width="1.2"/>
+        <line x1="325" y1="75" x2="328" y2="78" stroke="#e07a5f" stroke-width="1.2"/>
+      </g>
+    </svg>
+
+    <!-- HOUSTON POOL SVG -->
+    <svg style="position:absolute;bottom:0;right:0;width:50%;height:200px;" viewBox="0 0 340 200" preserveAspectRatio="xMidYMax meet">
+      <!-- Sun -->
+      <circle cx="270" cy="42" r="26" fill="rgba(255,209,102,0.9)"/>
+      <line x1="270" y1="8" x2="270" y2="2" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="270" y1="76" x2="270" y2="82" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="236" y1="42" x2="230" y2="42" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="304" y1="42" x2="310" y2="42" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="246" y1="18" x2="241" y2="13" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="294" y1="66" x2="299" y2="71" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="294" y1="18" x2="299" y2="13" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="246" y1="66" x2="241" y2="71" stroke="#ffd166" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Pool -->
+      <rect x="20" y="128" width="300" height="72" rx="8" fill="rgba(0,120,180,0.75)"/>
+      <!-- Pool shimmer -->
+      <path d="M20,142 Q85,135 150,142 Q215,149 280,142 Q310,138 320,140" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+      <path d="M20,156 Q85,149 150,156 Q215,163 280,156 Q310,152 320,154" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+      <path d="M20,170 Q85,163 150,170 Q215,177 280,170 Q310,166 320,168" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <!-- Pool edge -->
+      <rect x="15" y="122" width="310" height="9" rx="4" fill="rgba(255,255,255,0.1)"/>
+      <!-- Floatie -->
+      <ellipse cx="200" cy="152" rx="32" ry="13" fill="rgba(255,100,80,0.85)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <ellipse cx="200" cy="152" rx="20" ry="8" fill="rgba(0,120,180,0.75)"/>
+      <!-- Baby duck -->
+      <ellipse cx="120" cy="148" rx="12" ry="8" fill="rgba(255,220,80,0.9)"/>
+      <circle cx="130" cy="144" r="6" fill="rgba(255,220,80,0.9)"/>
+      <path d="M134,144 L139,143 L134,146 Z" fill="rgba(255,160,50,0.9)"/>
+      <!-- Palm tree -->
+      <rect x="55" y="75" width="7" height="58" rx="3" fill="rgba(110,75,35,0.85)"/>
+      <!-- Palm fronds -->
+      <path d="M58,78 Q35,58 12,66" fill="none" stroke="rgba(50,130,50,0.9)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M58,78 Q48,50 62,36" fill="none" stroke="rgba(50,130,50,0.9)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M58,78 Q80,58 100,66" fill="none" stroke="rgba(50,130,50,0.9)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M58,84 Q30,92 14,110" fill="none" stroke="rgba(50,130,50,0.8)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M58,84 Q90,94 108,112" fill="none" stroke="rgba(50,130,50,0.8)" stroke-width="5" stroke-linecap="round"/>
+      <!-- Coconuts -->
+      <circle cx="54" cy="82" r="4" fill="rgba(100,65,30,0.8)"/>
+      <circle cx="62" cy="80" r="4" fill="rgba(100,65,30,0.8)"/>
+      <!-- Splash -->
+      <circle cx="155" cy="124" r="3.5" fill="rgba(255,255,255,0.3)"/>
+      <circle cx="168" cy="120" r="2.5" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="178" cy="126" r="3" fill="rgba(255,255,255,0.25)"/>
+      <!-- Deck -->
+      <rect x="0" y="193" width="340" height="7" fill="rgba(210,185,145,0.45)"/>
+    </svg>
+  </div>
+
+  <div style="width:100%;background:rgba(0,0,0,0.2);padding:12px 0;text-align:center;font-family:'Jost',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:#ffd166;font-weight:400;">St. Louis · July 4th &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Houston · Aug 1st<br><span style="color:rgba(255,255,255,0.5);font-weight:300;letter-spacing:3px;">Two cities &nbsp;·&nbsp; Two showers &nbsp;·&nbsp; One family</span></div>
+
+  <svg class="hero-wave" viewBox="0 0 1440 60" preserveAspectRatio="none" height="60">
+    <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z" fill="#fdf8f0"/>
+  </svg>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="countdown-section">
+  <div class="countdown-label">Counting Down to St. Louis · July 4th</div>
+  <div class="countdown-grid">
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-days">—</span>
+      <span class="countdown-unit">Days</span>
+    </div>
+    <div class="countdown-sep">·</div>
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-hours">—</span>
+      <span class="countdown-unit">Hours</span>
+    </div>
+    <div class="countdown-sep">·</div>
+    <div class="countdown-item">
+      <span class="countdown-num" id="cd-mins">—</span>
+      <span class="countdown-unit">Minutes</span>
+    </div>
+  </div>
+</div>
+
+<!-- PARTIES -->
+<section class="parties-section" id="parties">
+  <div class="section-label">Join Us</div>
+  <div class="section-title">Select Your Shower</div>
+  <div class="section-sub">We're celebrating Baby Boy twice —<br>once in St. Louis, once poolside in Houston.<br>Come to one, or join us for both showers!</div>
+
+  <div class="parties-grid">
+    <div class="party-card">
+      <div class="party-badge">Shower One</div>
+      <span class="party-emoji">🌿</span>
+      <div class="party-city">St. Louis</div>
+      <div class="party-vibe">Garden Chic &nbsp;·&nbsp; Co-Ed</div>
+      <div class="party-divider"></div>
+      <div class="party-detail">
+        <strong>Saturday, July 4th 2026</strong><br>
+        11:00 AM – 2:00 PM<br>
+        3961 Hartford Street<br>
+        St. Louis, MO 63116<br>
+        Dress: Summer Chic
+      </div>
+      <a class="party-map-link" href="https://maps.google.com/?q=3961+Hartford+Street+St+Louis+MO+63116" target="_blank">View on Map →</a>
+    </div>
+
+    <div class="party-card">
+      <div class="party-badge">Shower Two</div>
+      <span class="party-emoji">🌊</span>
+      <div class="party-city">Houston</div>
+      <div class="party-vibe">Pool Party &nbsp;·&nbsp; Co-Ed</div>
+      <div class="party-divider"></div>
+      <div class="party-detail">
+        <strong>Saturday, August 1st 2026</strong><br>
+        1:00 PM – 6:00 PM<br>
+        1407 Kern Canyon Ln<br>
+        Richmond, TX 77469<br>
+        Dress: Summer Chic & Swimwear
+      </div>
+      <a class="party-map-link" href="https://maps.google.com/?q=1407+Kern+Canyon+Ln+Richmond+TX+77469" target="_blank">View on Map →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp-section" id="rsvp">
+  <div class="section-label">We'd love to see you</div>
+  <div class="section-title">RSVP</div>
+  <div class="section-sub">Let us know which shower you'll be joining — or both!<br>Please RSVP by July 1st, 2026.<br>Can't make it in person?<br>Virtual links will be available for both showers!</div>
+
+  <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/xbdejrzy" method="POST" onsubmit="handleRsvp(event)">
+    <div class="rsvp-row">
+      <input class="rsvp-input" type="text" name="first_name" placeholder="First name" required />
+      <input class="rsvp-input" type="text" name="last_name" placeholder="Last name" required />
+    </div>
+    <input class="rsvp-input" type="email" name="email" placeholder="Email address" required />
+    <select class="rsvp-select" name="party" required>
+      <option value="" disabled selected>Which shower will you attend?</option>
+      <option>St. Louis — July 4th 🌿 (In person)</option>
+      <option>Houston — August 1st 🌊 (In person)</option>
+      <option>Both showers! Wouldn't miss either one ✨ (In person)</option>
+      <option>St. Louis — July 4th 🌿 (Virtually)</option>
+      <option>Houston — August 1st 🌊 (Virtually)</option>
+      <option>Both showers! Joining virtually 💻</option>
+    </select>
+    <input class="rsvp-input" type="number" name="guests" placeholder="Number of guests (including yourself)" min="1" max="10" required />
+    <input class="rsvp-input" type="text" name="notes" placeholder="Any dietary restrictions or notes?" />
+    <button class="rsvp-btn" type="submit">Send My RSVP →</button>
+    <div class="rsvp-note">Your RSVP goes directly to Britney.<br>We'll confirm by email —<br>virtual guests will receive a Zoom link closer to the date!</div>
+  </form>
+  <div class="rsvp-success" id="rsvpSuccess">
+    Thank you — we can't wait to celebrate with you! 🤍
+  </div>
+</section>
+
+<!-- GUESTBOOK -->
+<section class="guestbook-section" id="guestbook">
+  <div class="section-label">Leave Some Love</div>
+  <div class="section-title">Leave Some Love for Our Son-shine</div>
+  <div class="section-sub">Share a message, a wish, or a little piece of advice<br>for Mama and her Son-shine. 🌞</div>
+
+  <div class="guestbook-wrap">
+    <form class="guestbook-form" id="guestbookForm" action="https://formspree.io/f/xdavooro" method="POST" onsubmit="handleGuestbook(event)">
+      <div class="rsvp-row">
+        <input class="rsvp-input" type="text" name="name" placeholder="Your name" required />
+        <input class="rsvp-input" type="text" name="relation" placeholder="How do you know Britney?" />
+      </div>
+      <textarea class="rsvp-input gb-textarea" name="message" placeholder="Write your message, wish, or words of love here..." rows="4" required></textarea>
+      <button class="rsvp-btn gb-btn" type="submit">Send My Love 🤍</button>
+    </form>
+    <div class="rsvp-success" id="guestbookSuccess" style="display:none; text-align:center; margin-top:20px;">
+      <div style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:24px; color:#1a1a1a;">
+        Thank you for your beautiful words 🌞
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GIFTS -->
+<section class="gifts-section" id="gifts">
+  <div class="section-label">Gifts & Giving</div>
+  <div class="section-title">Celebrate Our Son-shine</div>
+  <div class="section-sub">Your presence is the greatest gift of all.<br>If you'd like to give, here are two wonderful ways:</div>
+
+  <!-- Category 1: Registries -->
+  <div class="gifts-category">
+    <div class="gifts-category-label">🎁 Shop Our Registries</div>
+    <div class="gifts-category-sub">Browse our curated lists for everything our little<br>Son-shine needs to arrive in style.</div>
+    <div class="gifts-registry-grid">
+      <div class="gift-card">
+        <span class="gift-icon">🛍️</span>
+        <div class="gift-title">Zola</div>
+        <a class="gift-btn gift-btn-blue" href="https://baby.zola.com/registry/britney-jackson-baby" target="_blank">View Registry →</a>
+      </div>
+      <div class="gift-card">
+        <span class="gift-icon">🎯</span>
+        <div class="gift-title">Target</div>
+        <a class="gift-btn gift-btn-blue" href="https://www.target.com/gift-registry/gift/hot-boy-summer" target="_blank">View Registry →</a>
+      </div>
+      <div class="gift-card">
+        <span class="gift-icon">👶🏾</span>
+        <div class="gift-title">Babylist</div>
+        <a class="gift-btn gift-btn-blue" href="https://my.babylist.com/dqfnsewax" target="_blank">View Registry →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="gifts-or">
+    <div class="gifts-or-line"></div>
+    <div class="gifts-or-text">or</div>
+    <div class="gifts-or-line"></div>
+  </div>
+
+  <!-- Category 2: 529 -->
+  <div class="gifts-category">
+    <div class="gifts-category-label">🎓 Give the Gift of a Future</div>
+    <div class="gifts-category-sub">Contribute directly to our Son-shine's 529 college savings fund.<br>Every dollar plants a seed for tomorrow.</div>
+    <div style="text-align:center; margin-top:24px;">
+      <div class="gift-card gift-card-529">
+        <span class="gift-icon">☀️</span>
+        <div class="gift-title">529 College Fund</div>
+        <div class="gift-desc" style="margin-bottom:20px;">A gift that grows with him — invest in his bright future.</div>
+        <a class="gift-btn gift-btn-outline" href="https://gift.my529.org/S167WA" target="_blank">Contribute to His Future →</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- MAMA SAYS -->
+<section class="about-section" id="about">
+  <div class="about-layout">
+    <div>
+      <div class="about-photo-wrap">
+        <img class="about-photo" src="IMG_4901.jpeg" alt="Ultrasound of Summer Baby Boy" />
+        <div class="about-photo-caption">Son-shine at 20 Weeks ☀️</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-label">Mama Says</div>
+      <div class="section-title" style="color:#fff;">Britney Marie</div>
+      <div class="about-dots">
+        <div class="about-dot"></div>
+        <div class="about-dot"></div>
+        <div class="about-dot"></div>
+      </div>
+      <div class="about-quote">
+        "Some blessings arrive exactly when you need them most. This little one has already brightened our world with the most divine and radiant light. He doesn't have a name just yet, but he is already so deeply loved and so eagerly awaited."
+      </div>
+      <div class="about-detail">Expected&nbsp;September&nbsp;3rd,&nbsp;2026 &nbsp;·&nbsp; Houston,&nbsp;Texas</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Summer Son-shine</div>
+  <div class="footer-center">With so much love</div>
+  <div class="footer-right">Two cities · One family · 2026</div>
+</footer>
+
+<script>
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Mobile hamburger
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // Close nav on link click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+    });
+  });
+
+  // Countdown — switches between both showers automatically
+  const party1 = new Date('2026-07-04T11:00:00');
+  const party2 = new Date('2026-08-01T13:00:00');
+
+  function updateCountdown() {
+    const now = new Date();
+    let target, label;
+
+    if (now < party1) {
+      target = party1;
+      label = 'Counting Down to St. Louis · July 4th';
+    } else if (now < party2) {
+      target = party2;
+      label = 'Counting Down to Houston · August 1st';
+    } else {
+      document.querySelector('.countdown-section').style.display = 'none';
+      return;
+    }
+
+    document.querySelector('.countdown-label').textContent = label;
+
+    const diff = target - now;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+    document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // RSVP form
+  function handleRsvp(e) {
+    e.preventDefault();
+    const form = document.getElementById('rsvpForm');
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(() => {
+      form.style.display = 'none';
+      document.getElementById('rsvpSuccess').style.display = 'block';
+    });
+  }
+
+  // Guestbook
+  function handleGuestbook(e) {
+    e.preventDefault();
+    const form = document.getElementById('guestbookForm');
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(() => {
+      form.style.display = 'none';
+      document.getElementById('guestbookSuccess').style.display = 'block';
+    });
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.party-card, .gift-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
